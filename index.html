@@ -542,8 +542,11 @@
                 </div>
 
                 <div class="project-footer-actions">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="openCaseStudy('ewaste')">
-                    Interactive Architecture
+                  <a href="https://e-waste-erp-project.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    Live Demo ↗
+                  </a>
+                  <button type="button" class="btn btn-sm btn-secondary" onclick="openCaseStudy('ewaste')">
+                    Architecture
                   </button>
                   <a href="https://github.com/ashithsanjayrao1-cmyk/E-Waste-ERP-Project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
                     View Code
@@ -553,12 +556,15 @@
             </div>
           </article>
 
-          <!-- Project 2: Edumerge Attendance System -->
+          <!-- Project 2: Automated Exam Workflow (AEW) -->
           <article class="project-card">
             <div class="project-card-header">
-              <span class="project-type-badge">Academic Management Platform</span>
+              <span class="project-type-badge">Examination Allocation Engine</span>
               <div class="project-links">
-                <a href="https://github.com/ashithsanjayrao1-cmyk/edumerge-attendance-system" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View GitHub Code" aria-label="Edumerge GitHub">
+                <a href="https://automated-exam-work-project-aew.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Live App" aria-label="AEW Live">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/ashithsanjayrao1-cmyk/Automated-Exam-Work-Project-AEW-" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View GitHub Code" aria-label="AEW GitHub">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
               </div>
@@ -566,35 +572,35 @@
 
             <div class="project-body">
               <div>
-                <h3 class="project-title">🏫 Edumerge Smart Attendance</h3>
-                <div class="project-tagline">Automated Institutional Attendance &amp; Workflow System</div>
+                <h3 class="project-title">🎓 Automated Exam Workflow (AEW)</h3>
+                <div class="project-tagline">Master Timetable &amp; Multi-Hall Seating Allocation Engine</div>
                 <p class="project-desc">
-                  An academic attendance management portal streamlining attendance tracking, teacher session logging, and automatic compliance audits for university departments.
+                  An academic examination workflow platform that algorithmically allocates exam seating preventing subject collisions, dispatches HTML hall tickets via email, and manages student/faculty portals.
                 </p>
 
                 <ul class="project-highlights">
-                  <li>Role-based portal isolating Faculty, Student, and Department Administrator views.</li>
-                  <li>Automated percentage computation with warning thresholds for low attendance (&lt;75%).</li>
-                  <li>Fast relational querying with normalized database schemas in SQLite and MySQL.</li>
-                  <li>Instant CSV audit reporting for semester examination eligibility filings.</li>
+                  <li><strong>Master Timetable Allocation:</strong> Collision-safe seating distribution algorithm across multi-hall capacity constraints.</li>
+                  <li><strong>Automated Notification Dispatch:</strong> Multi-recipient email engine sending personalized hall tickets and invigilation orders via Flask-Mail.</li>
+                  <li><strong>Multi-Tier Authentication:</strong> Isolated portals for Institutional Administrators, Students, and Faculty with USN verification.</li>
+                  <li><strong>Vercel Serverless Architecture:</strong> Production deployed with automated SQLite initialization.</li>
                 </ul>
               </div>
 
               <div>
                 <div class="project-tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Django</span>
-                  <span class="tech-tag">MySQL / SQLite</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">Bootstrap 5</span>
-                  <span class="tech-tag">HTML5 / CSS3</span>
+                  <span class="tech-tag">Python 3</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">Flask-SQLAlchemy</span>
+                  <span class="tech-tag">Flask-Mail</span>
+                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">Vercel Serverless</span>
                 </div>
 
                 <div class="project-footer-actions">
-                  <button type="button" class="btn btn-sm btn-primary" onclick="openCaseStudy('edumerge')">
-                    Interactive Architecture
-                  </button>
-                  <a href="https://github.com/ashithsanjayrao1-cmyk/edumerge-attendance-system" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <a href="https://automated-exam-work-project-aew.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    Live Demo ↗
+                  </a>
+                  <a href="https://github.com/ashithsanjayrao1-cmyk/Automated-Exam-Work-Project-AEW-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
                     View Code
                   </a>
                 </div>
