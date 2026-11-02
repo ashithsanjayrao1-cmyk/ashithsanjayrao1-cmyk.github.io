@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Ashith Sanjay Rao | Full-Stack Python &amp; Backend Engineer | MCA 2026</title>
+  <meta name="description" content="Portfolio of Ashith Sanjay Rao - Full-Stack Python Developer, MCA Final Year Postgraduate, FastAPI & Django Architect, and Creator of E-Waste Master ERP.">
+  <meta name="keywords" content="Ashith Sanjay Rao, Software Developer, Backend Developer, Python FastAPI, Django, React.js, MCA Bengaluru, E-Waste ERP, Full Stack Engineer">
+  <meta name="author" content="Ashith Sanjay Rao">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ashith Sanjay Rao | Full-Stack Python &amp; Backend Engineer">
+  <meta property="og:description" content="Explore my production architectures in FastAPI, Django, React, SQL, and my flagship capstone project: E-Waste Master ERP.">
+  <meta property="og:url" content="https://ashithsanjayrao1-cmyk.github.io">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Aurora Glow Elements -->
+  <div class="aurora-container">
+    <div class="aurora-orb orb-1"></div>
+    <div class="aurora-orb orb-2"></div>
+    <div class="aurora-orb orb-3"></div>
+  </div>
+
+  <!-- Background Grid Texture -->
+  <div class="bg-grid-pattern"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">&lt;</span>Ashith<span class="logo-dot">.</span>dev<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#playground" class="nav-link">Playground</a>
+        <a href="#terminal" class="nav-link">CLI Terminal</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-sm btn-recruiter" id="recruiter-toggle-btn" onclick="toggleRecruiterSnapshot()">
+          ⚡ Recruiter Snapshot
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">
+          Hire Me
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#playground" class="drawer-link">Playground</a>
+      <a href="#terminal" class="drawer-link">CLI Terminal</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+      <button type="button" class="btn btn-recruiter" onclick="toggleRecruiterSnapshot()">
+        ⚡ Toggle Recruiter Snapshot
+      </button>
+      <a href="#contact" class="btn btn-primary">
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Column: Intro & Call To Action -->
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-pulse"></span>
+              Available for Full-Time Roles | Immediate Joiner | MCA 2026 Graduate
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Ashith Sanjay Rao</span>
+            </h1>
+
+            <div class="hero-subtitle-container">
+              <span class="typing-text" id="typing-role"></span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-description">
+              Final-semester <strong>Master of Computer Applications (MCA)</strong> candidate based in Bengaluru. Engineering high-velocity backends, zero-trust RESTful APIs, and algorithmic systems with <strong>FastAPI, Python, Django, React.js, and SQL</strong>. Architect of <strong>E-Waste Master ERP</strong>.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                Explore Projects
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <button type="button" class="btn btn-secondary" onclick="toggleRecruiterSnapshot()">
+                ⚡ Recruiter Snapshot
+              </button>
+              <a href="#playground" class="btn btn-outline">
+                Live Sandbox
+              </a>
+            </div>
+
+            <!-- Tech Pills Row -->
+            <div class="tech-pills">
+              <span class="tech-pills-label">Core Stack:</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Django</span>
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">SQLAlchemy</span>
+              <span class="tech-pill">MySQL / SQLite</span>
+              <span class="tech-pill">Tailwind CSS</span>
+              <span class="tech-pill">JWT RBAC</span>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Interactive Code IDE & Metrics -->
+          <div class="hero-visual">
+            <div class="hero-code-card">
+              <div class="code-header">
+                <div class="code-dots">
+                  <span class="code-dot dot-red"></span>
+                  <span class="code-dot dot-yellow"></span>
+                  <span class="code-dot dot-green"></span>
+                </div>
+                <div class="code-tabs">
+                  <button type="button" class="code-tab-btn active" data-tab="profile">profile.py</button>
+                  <button type="button" class="code-tab-btn" data-tab="capabilities">capabilities.json</button>
+                  <button type="button" class="code-tab-btn" data-tab="algorithm">reconciliation_algo.py</button>
+                </div>
+                <button type="button" class="code-copy-btn" onclick="copyHeroCode()" title="Copy Code">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  Copy
+                </button>
+              </div>
+              <pre class="code-body" id="hero-code-content"><code><span class="c-kw">class</span> <span class="c-fn">AshithSanjayRao</span>:
+    <span class="c-prop">degree</span>: <span class="c-str">"MCA (Master of Computer Applications)"</span>
+    <span class="c-prop">status</span>: <span class="c-str">"Final Semester (2026 Graduate)"</span>
+    <span class="c-prop">location</span>: <span class="c-str">"Bengaluru, India"</span>
+    <span class="c-prop">availability</span>: <span class="c-str">"Immediate (0-Day Notice Period)"</span>
+    
+    <span class="c-prop">core_stack</span> = [
+        <span class="c-str">"Python"</span>, <span class="c-str">"FastAPI"</span>, <span class="c-str">"Django"</span>,
+        <span class="c-str">"SQLAlchemy"</span>, <span class="c-str">"MySQL"</span>, <span class="c-str">"React.js"</span>
+    ]
+
+    <span class="c-kw">def</span> <span class="c-fn">get_value_proposition</span>(self):
+        <span class="c-kw">return</span> {
+            <span class="c-str">"architecture"</span>: <span class="c-str">"Asynchronous High-Throughput REST APIs"</span>,
+            <span class="c-str">"security"</span>: <span class="c-str">"Zero-Trust RBAC & JWT Bearer Tokens"</span>,
+            <span class="c-str">"algorithms"</span>: <span class="c-str">"Algorithmic Data Integrity Validation"</span>
+        }</code></pre>
+            </div>
+
+            <!-- Quick Metrics Row -->
+            <div class="hero-stats-row">
+              <div class="stat-chip">
+                <div class="stat-chip-num">2026</div>
+                <div class="stat-chip-label">MCA Postgraduate</div>
+              </div>
+              <div class="stat-chip">
+                <div class="stat-chip-num">5+</div>
+                <div class="stat-chip-label">Key Repositories</div>
+              </div>
+              <div class="stat-chip">
+                <div class="stat-chip-num">0 Days</div>
+                <div class="stat-chip-label">Notice Period</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Recruiter Fast-Track Dossier (Collapsible Card) -->
+        <div class="recruiter-snapshot-card" id="recruiter-snapshot">
+          <div class="snapshot-header">
+            <h3 class="snapshot-title">
+              ⚡ Recruiter Fast-Track Dossier
+            </h3>
+            <span class="snapshot-badge">Ready for Immediate Onboarding</span>
+          </div>
+
+          <div class="snapshot-grid">
+            <div class="snapshot-item">
+              <span class="snapshot-item-label">Target Positions</span>
+              <span class="snapshot-item-val highlight">Software Development Engineer (SDE) / Backend Developer / Python Engineer</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-item-label">Availability / Notice</span>
+              <span class="snapshot-item-val highlight">Immediate (0-Day Notice Period)</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-item-label">Current Location</span>
+              <span class="snapshot-item-val">Bengaluru, Karnataka, India (Open to Relocation / Hybrid / Remote)</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-item-label">Formal Education</span>
+              <span class="snapshot-item-val">Master of Computer Applications (MCA) — 4th Semester (2026 Batch)</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-item-label">Core Specialization</span>
+              <span class="snapshot-item-val">FastAPI, Python, Django, REST APIs, SQLAlchemy, MySQL, JWT RBAC</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-item-label">Direct Communication</span>
+              <span class="snapshot-item-val">ashithsanjayrao1@gmail.com</span>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="mailto:ashithsanjayrao1@gmail.com?subject=Interview%20Opportunity%20for%20Ashith%20Sanjay%20Rao" class="btn btn-sm btn-primary">
+              Schedule an Interview
+            </a>
+            <a href="#projects" class="btn btn-sm btn-secondary">
+              Review Codebases
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section: Bento Grid Architecture -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineering Mindset</span>
+          <h2 class="section-title">Bridging Algorithms with Scalable Backends</h2>
+          <p class="section-lead">
+            How I approach software engineering, system design, and building mission-critical platforms.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento Card 1: Core Background & MCA -->
+          <div class="bento-card bento-col-8">
+            <div class="bento-icon">🎓</div>
+            <h3 class="bento-title">Postgraduate Computer Science Discipline</h3>
+            <p class="bento-desc">
+              Currently completing my <strong>Master of Computer Applications (MCA - 4th Sem)</strong> in Bengaluru. My academic focus centers on distributed web systems, algorithmic optimization, relational database modeling, and software engineering methodologies. I treat code maintainability and testability as first-class citizens.
+            </p>
+          </div>
+
+          <!-- Bento Card 2: Security & RBAC -->
+          <div class="bento-card bento-col-4">
+            <div class="bento-icon">🔐</div>
+            <h3 class="bento-title">Zero-Trust Security</h3>
+            <p class="bento-desc">
+              Implementation of strict Role-Based Access Control (RBAC) across endpoints. Protecting user sessions with cryptographically salted bcrypt hashing and JWT Bearer authorization guards.
+            </p>
+          </div>
+
+          <!-- Bento Card 3: Algorithmic Rigor -->
+          <div class="bento-card bento-col-4">
+            <div class="bento-icon">🧮</div>
+            <h3 class="bento-title">Algorithmic Rigor</h3>
+            <p class="bento-desc">
+              Active problem solver applying optimal complexity patterns: Two Pointers, Sliding Window, Binary Search, and Recursion. Validating business logic mathematically to eliminate edge-case failures.
+            </p>
+          </div>
+
+          <!-- Bento Card 4: Full-Stack & UI -->
+          <div class="bento-card bento-col-8">
+            <div class="bento-icon">⚡</div>
+            <h3 class="bento-title">High-Velocity Asynchronous APIs &amp; Modern UI</h3>
+            <p class="bento-desc">
+              Proficient in designing asynchronous FastAPI and Django architectures backed by SQLAlchemy ORM and MySQL. Paired with lightweight, reactive frontend components built using <strong>React.js</strong> and <strong>Tailwind CSS</strong> to craft ultra-responsive user experiences.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills &amp; Technology Stack</h2>
+          <p class="section-lead">
+            Languages, frameworks, databases, and engineering tools leveraged across my production and academic projects.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter-row">
+          <button type="button" class="filter-btn active" data-filter="all">All Skills</button>
+          <button type="button" class="filter-btn" data-filter="backend">Backend &amp; APIs</button>
+          <button type="button" class="filter-btn" data-filter="frontend">Frontend &amp; UI</button>
+          <button type="button" class="filter-btn" data-filter="database">Databases &amp; ORM</button>
+          <button type="button" class="filter-btn" data-filter="tools">Languages &amp; Tools</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- FastAPI -->
+          <div class="skill-card" data-category="backend">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">FastAPI</span>
+                <span class="skill-badge">Backend</span>
+              </div>
+              <p class="skill-desc">Asynchronous event loops, Pydantic data schemas, dependency injection, Swagger docs, and high-concurrency endpoints.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">Python 3</span>
+                <span class="skill-badge">Language</span>
+              </div>
+              <p class="skill-desc">Object-oriented programming, algorithmic implementations, memory management, data structures, and script automation.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- Django -->
+          <div class="skill-card" data-category="backend">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">Django</span>
+                <span class="skill-badge">Backend</span>
+              </div>
+              <p class="skill-desc">Model-View-Template architecture, ORM querysets, session management, middleware filters, and administrative portals.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- React.js -->
+          <div class="skill-card" data-category="frontend">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">React.js</span>
+                <span class="skill-badge">Frontend</span>
+              </div>
+              <p class="skill-desc">Functional components, state hooks (`useState`, `useEffect`), client routing, asynchronous API consumption, and modular design.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- SQL (MySQL / SQLite / PostgreSQL) -->
+          <div class="skill-card" data-category="database">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">SQL (MySQL &amp; SQLite)</span>
+                <span class="skill-badge">Database</span>
+              </div>
+              <p class="skill-desc">Normalized relational schemas, JOINs, aggregations, indexing strategies, Window Functions, and constraints.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- SQLAlchemy ORM -->
+          <div class="skill-card" data-category="database">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">SQLAlchemy ORM</span>
+                <span class="skill-badge">ORM</span>
+              </div>
+              <p class="skill-desc">Declarative bases, database session pooling, dynamic queries, transaction lifecycles, and database migrations.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- RESTful API Design -->
+          <div class="skill-card" data-category="backend">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">RESTful APIs &amp; JWT</span>
+                <span class="skill-badge">Architecture</span>
+              </div>
+              <p class="skill-desc">Stateless HTTP contract design, JSON Web Token bearer authentication, status codes, and security guards.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Tailwind CSS & Glassmorphism -->
+          <div class="skill-card" data-category="frontend">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">Tailwind CSS</span>
+                <span class="skill-badge">UI Framework</span>
+              </div>
+              <p class="skill-desc">Utility-first responsive layouts, glassmorphic styling, custom color variables, and fluid mobile design.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- ReportLab & Document Synthesis -->
+          <div class="skill-card" data-category="backend">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">ReportLab &amp; Pillow</span>
+                <span class="skill-badge">Synthesis</span>
+              </div>
+              <p class="skill-desc">Programmatic in-memory rendering of landscape compliance certificates, tax invoices, and dynamic QR code generation.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <!-- DSA & Algorithmic Problem Solving -->
+          <div class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">Data Structures &amp; DSA</span>
+                <span class="skill-badge">Computer Science</span>
+              </div>
+              <p class="skill-desc">Binary Search, Two Pointers, Sliding Window, Linked Lists, Recursion, Sorting, and Time/Space complexity audits.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-badge">DevOps</span>
+              </div>
+              <p class="skill-desc">Atomic commits, branch isolation, remote synchronization, pull request workflows, and repository administration.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Cloud Deployment (Vercel & Render) -->
+          <div class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-top">
+                <span class="skill-name">Cloud Deployment</span>
+                <span class="skill-badge">DevOps</span>
+              </div>
+              <p class="skill-desc">Vercel Serverless Python functions, Render PaaS web services, Uvicorn ASGI workers, and environment variable security.</p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 84%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Codebases</span>
+          <h2 class="section-title">Production &amp; Capstone Projects</h2>
+          <p class="section-lead">
+            Real-world systems built with business logic, mathematical validation, and clean architectural design.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: E-Waste Master ERP (Flagship) -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-type-badge">Flagship MCA Capstone Project</span>
+              <div class="project-links">
+                <a href="https://github.com/ashithsanjayrao1-cmyk/E-Waste-ERP-Project" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View GitHub Code" aria-label="E-Waste ERP GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div>
+                <h3 class="project-title">🌿 E-Waste Master ERP</h3>
+                <div class="project-tagline">Enterprise Lifecycle Recycling Platform &amp; Algorithmic Inventory Engine</div>
+                <p class="project-desc">
+                  An enterprise resource planning platform designed to automate and secure the lifecycle of electronic waste recycling hubs. Features zero-trust RBAC, programmatic document generation, and toxic element quarantine.
+                </p>
+
+                <ul class="project-highlights">
+                  <li><strong>Algorithmic Inventory Engine:</strong> Mathematically checks extracted commodity weights against raw inbound batch weight to prevent artificial inventory inflation.</li>
+                  <li><strong>Zero-Trust RBAC &amp; JWT:</strong> Isolates Admin, Worker, Driver, and Buyer dashboards with bcrypt hashing and JWT Bearer security.</li>
+                  <li><strong>Cryptographic Document Minting:</strong> Programmatically renders landscape Compliance Certificates with SHA-256 digital hashes and QR verification.</li>
+                  <li><strong>Toxic Material Quarantine:</strong> Automatically detects hazardous components (e.g. Lithium-Ion batteries) and reroutes them to specialized manifests.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">Python 3</span>
+                  <span class="tech-tag">SQLAlchemy</span>
+                  <span class="tech-tag">MySQL / SQLite</span>
+                  <span class="tech-tag">ReportLab</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Vercel &amp; Render</span>
+                </div>
+
+                <div class="project-footer-actions">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="openCaseStudy('ewaste')">
+                    Interactive Architecture
+                  </button>
+                  <a href="https://github.com/ashithsanjayrao1-cmyk/E-Waste-ERP-Project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Edumerge Attendance System -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-type-badge">Academic Management Platform</span>
+              <div class="project-links">
+                <a href="https://github.com/ashithsanjayrao1-cmyk/edumerge-attendance-system" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View GitHub Code" aria-label="Edumerge GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div>
+                <h3 class="project-title">🏫 Edumerge Smart Attendance</h3>
+                <div class="project-tagline">Automated Institutional Attendance &amp; Workflow System</div>
+                <p class="project-desc">
+                  An academic attendance management portal streamlining attendance tracking, teacher session logging, and automatic compliance audits for university departments.
+                </p>
+
+                <ul class="project-highlights">
+                  <li>Role-based portal isolating Faculty, Student, and Department Administrator views.</li>
+                  <li>Automated percentage computation with warning thresholds for low attendance (&lt;75%).</li>
+                  <li>Fast relational querying with normalized database schemas in SQLite and MySQL.</li>
+                  <li>Instant CSV audit reporting for semester examination eligibility filings.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">MySQL / SQLite</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Bootstrap 5</span>
+                  <span class="tech-tag">HTML5 / CSS3</span>
+                </div>
+
+                <div class="project-footer-actions">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="openCaseStudy('edumerge')">
+                    Interactive Architecture
+                  </button>
+                  <a href="https://github.com/ashithsanjayrao1-cmyk/edumerge-attendance-system" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Spottr Gym Backend -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-type-badge">Fitness Analytics API</span>
+              <div class="project-links">
+                <a href="https://github.com/ashithsanjayrao1-cmyk/Spottr-Project" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View GitHub Code" aria-label="Spottr GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div>
+                <h3 class="project-title">🏋️ Spottr Fitness Backend</h3>
+                <div class="project-tagline">High-Throughput Asynchronous Workout Logging API</div>
+                <p class="project-desc">
+                  A high-velocity REST API engineered to track progressive overload, exercise splits, volume computations, and user personal records with sub-50ms database queries.
+                </p>
+
+                <ul class="project-highlights">
+                  <li>Asynchronous RESTful endpoint lifecycle designed in FastAPI.</li>
+                  <li>Pydantic request payload sanitization and strict type checking.</li>
+                  <li>Dynamic volume calculations (Reps × Sets × Weight) with weekly aggregation.</li>
+                  <li>Tokenized authentication ensuring strict user data isolation.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">SQLAlchemy</span>
+                  <span class="tech-tag">Pydantic</span>
+                  <span class="tech-tag">REST APIs</span>
+                </div>
+
+                <div class="project-footer-actions">
+                  <button type="button" class="btn btn-sm btn-primary" onclick="openCaseStudy('spottr')">
+                    Interactive Architecture
+                  </button>
+                  <a href="https://github.com/ashithsanjayrao1-cmyk/Spottr-Project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: DSA Practice -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-type-badge">Algorithmic Problem Solving</span>
+              <div class="project-links">
+                <a href="https://github.com/ashithsanjayrao1-cmyk/DSA_Interview_Practice" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View GitHub Code" aria-label="DSA GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div>
+                <h3 class="project-title">🧮 DSA &amp; Algorithm Suite</h3>
+                <div class="project-tagline">Optimized Data Structures &amp; Algorithmic Patterns</div>
+                <p class="project-desc">
+                  Curated repository of 50+ optimized algorithm solutions in Python focusing on interview-grade problem categories, asymptotic space/time complexity, and edge-case handling.
+                </p>
+
+                <ul class="project-highlights">
+                  <li>Sliding Window &amp; Two-Pointer techniques for string and array partitioning.</li>
+                  <li>Binary Search variations on rotated and sorted arrays.</li>
+                  <li>Linked List operations (reversals, cycle detection, merge sort).</li>
+                  <li>Sorting algorithms implemented from scratch: Merge Sort, Quick Sort, Bubble Sort.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python 3</span>
+                  <span class="tech-tag">Algorithms</span>
+                  <span class="tech-tag">Data Structures</span>
+                  <span class="tech-tag">Asymptotic Analysis</span>
+                </div>
+
+                <div class="project-footer-actions">
+                  <a href="https://github.com/ashithsanjayrao1-cmyk/DSA_Interview_Practice" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    Explore Problem Set
+                  </a>
+                  <a href="#playground" class="btn btn-sm btn-outline">
+                    Test in Sandbox
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Developer Playground / Sandbox -->
+    <section class="section playground-section" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Sandbox</span>
+          <h2 class="section-title">Developer &amp; Recruiter Playground</h2>
+          <p class="section-lead">
+            Test simulated live REST API endpoints and execute real analytical SQL queries in real-time.
+          </p>
+        </div>
+
+        <div class="playground-container">
+          <!-- Playground Navigation Tabs -->
+          <div class="playground-nav-tabs">
+            <button type="button" class="play-tab-btn active" data-tab="tab-api">
+              <span>⚡</span> REST API Endpoint Simulator
+            </button>
+            <button type="button" class="play-tab-btn" data-tab="tab-sql">
+              <span>🗄️</span> SQL Query Runner &amp; Live Table
+            </button>
+          </div>
+
+          <div class="playground-content">
+            
+            <!-- Panel 1: REST API Inspector -->
+            <div class="play-panel active" id="tab-api">
+              <div class="api-selector-row">
+                <span class="api-method-badge method-post" id="api-method-badge">POST</span>
+                <select class="api-endpoint-select" id="api-endpoint-select" aria-label="Select API Endpoint">
+                  <option value="login">POST /api/v1/auth/login (JWT Bearer Token Issuance)</option>
+                  <option value="inventory">GET /api/v1/erp/inventory/live (Algorithmic Inventory Balance)</option>
+                  <option value="certificate">POST /api/v1/certificates/verify-hash (SHA-256 Digital Verification)</option>
+                </select>
+                <button type="button" class="btn btn-sm btn-primary" id="api-run-btn">
+                  Send Request
+                </button>
+              </div>
+
+              <div class="api-response-window">
+                <div class="api-window-header">
+                  <div>
+                    Status: <strong class="api-status" id="api-status-span">200 OK</strong> &nbsp;|&nbsp; 
+                    Latency: <span id="api-time-span">118ms</span>
+                  </div>
+                  <div>Content-Type: application/json</div>
+                </div>
+                <pre class="api-json-pre" id="api-output-pre"><code>{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTgwMDAwMDAwMH0.3e8f...",
+  "token_type": "bearer",
+  "role": "admin",
+  "authenticated": true,
+  "permissions": [
+    "READ_INVENTORY",
+    "ASSIGN_DISPATCH",
+    "MINT_COMPLIANCE_CERTIFICATES",
+    "AUDIT_RECONCILIATION"
+  ]
+}</code></pre>
+              </div>
+            </div>
+
+            <!-- Panel 2: SQL Query Runner -->
+            <div class="play-panel" id="tab-sql">
+              <div class="api-selector-row">
+                <select class="api-endpoint-select" id="sql-query-select" aria-label="Select SQL Query">
+                  <option value="yield">1. Extracted Commodity Yield Summary (GROUP BY, SUM, JOIN)</option>
+                  <option value="discrepancy">2. Inbound vs Dispatched Tare Discrepancy (WHERE diff != 0)</option>
+                  <option value="toxic">3. Toxic Battery Manifest Isolation (Subqueries &amp; Routing)</option>
+                </select>
+                <button type="button" class="btn btn-sm btn-primary" id="sql-run-btn">
+                  Execute Query
+                </button>
+                <span style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);" id="sql-time-span">
+                  Executed in 0.82 ms
+                </span>
+              </div>
+
+              <div class="sql-query-box" id="sql-code-display">SELECT 
+    em.material_type, 
+    ROUND(SUM(em.yield_weight_kg), 2) AS total_yield_kg,
+    ROUND(AVG(em.yield_weight_kg), 2) AS avg_batch_yield_kg
+FROM extracted_materials em
+JOIN job_cards jc ON em.job_id = jc.id
+WHERE jc.status = 'COMPLETED'
+GROUP BY em.material_type
+ORDER BY total_yield_kg DESC;</div>
+
+              <div class="sql-table-wrapper">
+                <table class="sql-table">
+                  <thead id="sql-table-head">
+                    <tr>
+                      <th>material_type</th>
+                      <th>total_yield_kg</th>
+                      <th>avg_batch_yield_kg</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sql-table-body">
+                    <tr>
+                      <td>Refined Copper</td>
+                      <td>1,420.50</td>
+                      <td>118.37</td>
+                    </tr>
+                    <tr>
+                      <td>Shredded Aluminum</td>
+                      <td>980.20</td>
+                      <td>81.68</td>
+                    </tr>
+                    <tr>
+                      <td>Gold Flakes (Circuit)</td>
+                      <td>18.25</td>
+                      <td>1.52</td>
+                    </tr>
+                    <tr>
+                      <td>Polycarbonate Plastic</td>
+                      <td>2,310.00</td>
+                      <td>192.50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Developer CLI Terminal Section -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive CLI</span>
+          <h2 class="section-title">Developer Terminal</h2>
+          <p class="section-lead">
+            Prefer the command line? Type <code>help</code>, <code>skills</code>, <code>projects</code>, or <code>hire</code> below.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="code-dots">
+              <span class="code-dot dot-red"></span>
+              <span class="code-dot dot-yellow"></span>
+              <span class="code-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">ashith@terminal: ~ (zsh)</span>
+            <div></div>
+          </div>
+          <div class="terminal-content" id="terminal-cli-output">
+            <div class="terminal-output">
+              Welcome to Ashith Sanjay Rao's Interactive Portfolio Terminal (v2026.1).<br>
+              Type <strong style="color:var(--accent-cyan)">help</strong> to view all available commands.
+            </div>
+          </div>
+          <div style="background:#06080d; padding:0.75rem 1.45rem; border-top:1px solid var(--border-subtle);">
+            <div class="terminal-input-row">
+              <span class="terminal-prompt">visitor@ashith:~$</span>
+              <input type="text" class="terminal-input" id="terminal-cli-input" placeholder="Type a command (e.g. help, skills, hire)..." autocomplete="off" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-lead">
+            Actively seeking full-time opportunities, engineering roles, and backend collaborations.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Information & Channels -->
+          <div class="contact-card">
+            <h3 style="font-size:1.5rem; margin-bottom:1rem;">Communication Channels</h3>
+            <p style="color:var(--text-secondary); margin-bottom:2rem; line-height:1.7;">
+              Feel free to reach out via email, LinkedIn, or explore my GitHub repositories directly. I am an immediate joiner based in Bengaluru and ready for interviews.
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:1.25rem;">
+              <div style="display:flex; align-items:center; gap:1rem;">
+                <div class="bento-icon" style="margin-bottom:0;">✉️</div>
+                <div>
+                  <div style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">DIRECT EMAIL</div>
+                  <a href="mailto:ashithsanjayrao1@gmail.com" style="color:var(--accent-cyan); text-decoration:none; font-weight:600;">
+                    ashithsanjayrao1@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div style="display:flex; align-items:center; gap:1rem;">
+                <div class="bento-icon" style="margin-bottom:0;">💼</div>
+                <div>
+                  <div style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">LINKEDIN PROFILE</div>
+                  <a href="https://www.linkedin.com/in/ashith-sanjay-rao/" target="_blank" rel="noopener noreferrer" style="color:var(--text-main); text-decoration:none; font-weight:600;">
+                    linkedin.com/in/ashith-sanjay-rao
+                  </a>
+                </div>
+              </div>
+
+              <div style="display:flex; align-items:center; gap:1rem;">
+                <div class="bento-icon" style="margin-bottom:0;">🐙</div>
+                <div>
+                  <div style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">GITHUB REPOSITORIES</div>
+                  <a href="https://github.com/ashithsanjayrao1-cmyk" target="_blank" rel="noopener noreferrer" style="color:var(--text-main); text-decoration:none; font-weight:600;">
+                    github.com/ashithsanjayrao1-cmyk
+                  </a>
+                </div>
+              </div>
+
+              <div style="display:flex; align-items:center; gap:1rem;">
+                <div class="bento-icon" style="margin-bottom:0;">📍</div>
+                <div>
+                  <div style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">LOCATION</div>
+                  <div style="color:var(--text-main); font-weight:600;">Bengaluru, Karnataka, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Interactive Message Dispatch -->
+          <div class="contact-card">
+            <h3 style="font-size:1.5rem; margin-bottom:1rem;">Send a Direct Message</h3>
+            <form class="contact-form" id="portfolio-contact-form">
+              <div class="form-group">
+                <label class="form-label" for="c-name">YOUR NAME</label>
+                <input type="text" id="c-name" class="form-input" placeholder="e.g. Satya Nadella" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c-email">YOUR EMAIL</label>
+                <input type="email" id="c-email" class="form-input" placeholder="name@company.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c-msg">MESSAGE / INQUIRY</label>
+                <textarea id="c-msg" class="form-textarea" rows="4" placeholder="Let's connect regarding a Software Engineer opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">
+                Send Message Directly
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        © 2026 <strong>Ashith Sanjay Rao</strong>. Designed &amp; Engineered with Passion.
+      </div>
+      <div style="display:flex; gap:1.25rem;">
+        <a href="#hero" class="nav-link">Back to Top ↑</a>
+        <a href="https://github.com/ashithsanjayrao1-cmyk" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/ashith-sanjay-rao/" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Case Study Modal -->
+  <div class="modal-overlay" id="case-study-modal" onclick="if(event.target===this) closeCaseStudy()">
+    <div class="modal-box">
+      <button type="button" class="modal-close-btn" onclick="closeCaseStudy()" aria-label="Close Modal">✕</button>
+      <div id="case-study-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
