@@ -20,7 +20,7 @@ const ROLES = [
   "Full-Stack Python Engineer",
   "FastAPI & Django Specialist",
   "Algorithmic System Architect",
-  "MCA Final-Year Postgraduate",
+  "MCA Graduate & Immediate Joiner",
   "Creator of E-Waste Master ERP"
 ];
 
@@ -106,8 +106,8 @@ function toggleRecruiterSnapshot() {
    ------------------------------------------------------------------- */
 const CODE_SNIPPETS = {
   profile: `<span class="c-kw">class</span> <span class="c-fn">AshithSanjayRao</span>:
-    <span class="c-prop">degree</span>: <span class="c-str">"MCA (Master of Computer Applications)"</span>
-    <span class="c-prop">status</span>: <span class="c-str">"Final Semester (2026 Graduate)"</span>
+    <span class="c-prop">degree</span>: <span class="c-str">"Master of Computer Applications (MCA Graduate)"</span>
+    <span class="c-prop">status</span>: <span class="c-str">"MCA Graduate (Immediate Joiner)"</span>
     <span class="c-prop">location</span>: <span class="c-str">"Bengaluru, India"</span>
     <span class="c-prop">availability</span>: <span class="c-str">"Immediate (0-Day Notice Period)"</span>
     
@@ -405,11 +405,11 @@ function initInteractiveTerminal() {
 
   const COMMANDS = {
     help: "Available Commands:\n  - about     : High-level engineer overview\n  - skills    : Technical stack & tools\n  - projects  : Featured production repositories\n  - contact   : Direct email & communication channels\n  - hire      : Recruiter snapshot summary\n  - clear     : Wipe terminal display",
-    about: "Ashith Sanjay Rao | 4th Sem MCA Postgraduate | Bengaluru, India\nSpecializing in high-performance Python backends, FastAPI architectures, and algorithmic inventory systems.",
+    about: "Ashith Sanjay Rao | Master of Computer Applications (MCA Graduate) | Bengaluru, India\nSpecializing in high-performance Python backends, FastAPI architectures, and algorithmic systems.",
     skills: "Languages  : Python, JavaScript (ES6+), SQL, HTML5, CSS3, C++\nFrameworks : FastAPI, Django, React.js, Tailwind CSS, SQLAlchemy, Pydantic\nDatabases  : MySQL, SQLite, PostgreSQL\nTools      : Git, GitHub, Vercel, Render, Postman, Linux",
-    projects: "1. E-Waste Master ERP (FastAPI, SQLAlchemy, Tailwind, ReportLab, JWT)\n2. Edumerge Attendance System (Python, Django, SQLite/MySQL)\n3. Spottr Fitness Backend (FastAPI, RESTful Analytics)\n4. Digital Heroes Page Pulse (React.js, Tailwind CSS)\n5. DSA Interview Practice (Python 50+ Algorithmic Solutions)",
+    projects: "1. E-Waste Master ERP (FastAPI, SQLAlchemy, Tailwind, ReportLab, JWT)\n   - Live Demo : https://e-waste-erp-project.vercel.app/dashboard\n   - Demo Login: user=admin | pass=admin123\n2. Automated Examination Workflow (AEW) (Flask, Flask-SQLAlchemy, Flask-Mail)\n   - Live Demo : https://automated-exam-work-project-aew.vercel.app/\n   - Admin Auth: user=admin | pass=admin@1234\n3. Spottr Fitness Backend (FastAPI, RESTful Analytics API)\n   - Docs/Code : https://github.com/ashithsanjayrao1-cmyk/Spottr-Project\n4. DSA Interview Practice (Python 50+ Algorithmic Solutions)\n   - GitHub    : https://github.com/ashithsanjayrao1-cmyk/DSA_Interview_Practice",
     contact: "Email    : ashithsanjayrao1@gmail.com\nGitHub   : https://github.com/ashithsanjayrao1-cmyk\nLinkedIn : https://www.linkedin.com/in/ashith-sanjay-rao/",
-    hire: "⚡ RECRUITER FAST-TRACK:\nTarget Roles : Software Engineer (SDE), Backend Developer, Full-Stack Engineer\nNotice Period: 0 Days (Immediate Joiner)\nStatus       : MCA Final Semester (2026 Batch)\nReady to interview immediately!"
+    hire: "⚡ RECRUITER FAST-TRACK:\nTarget Roles : Software Engineer (SDE), Backend Developer, Full-Stack Engineer\nNotice Period: 0 Days (Immediate Joiner)\nStatus       : MCA Graduate (Immediate Joiner)\nReady to interview immediately!"
   };
 
   terminalInput.addEventListener('keydown', (e) => {
@@ -452,29 +452,32 @@ const CASE_STUDIES = {
       <h4>🛡️ Zero-Trust Security</h4>
       <p>Strict Role-Based Access Control (RBAC) separates Admin, Worker, Driver, and Buyer dashboards using bcrypt password hashing and tamper-proof JSON Web Token (JWT) Bearer tokens.</p>
       
-      <h4>📊 Key Metrics</h4>
+      <h4>📊 Key Metrics & Access</h4>
       <ul>
         <li>100% automated material reconciliation eliminating artificial inventory inflation.</li>
         <li>Sub-150ms API response latency on asynchronous FastAPI event loops.</li>
-        <li>Production deployment ready for both Vercel Serverless and Render.</li>
+        <li>Production Vercel deployment: <code>admin</code> / <code>admin123</code>.</li>
       </ul>
     `
   },
-  edumerge: {
-    title: "Edumerge Smart Attendance: Architecture Deep-Dive",
-    badge: "Enterprise Academic Workflow",
+  aew: {
+    title: "Automated Examination Workflow (AEW): Architecture Deep-Dive",
+    badge: "Examination Allocation Engine",
     content: `
       <h4>🎯 The Challenge</h4>
-      <p>Manual classroom attendance logging suffers from human entry errors, proxy attendance, and delayed reporting to institutional administration.</p>
+      <p>Manual exam scheduling across multi-department academic institutions causes timetable collisions, invigilation duty overlaps, and delayed hall ticket distribution to candidates.</p>
       
       <h4>⚡ Engineering Solution</h4>
-      <p>Designed a structured multi-tier attendance logging engine in <strong>Django</strong> with normalized relational database models, fast date-range filtering, and automated calculation of attendance thresholds.</p>
+      <p>Engineered an automated examination allocation engine in <strong>Flask</strong> and <strong>SQLAlchemy</strong> with conflict-free seating allocation across hall capacity limits. Automated HTML hall ticket dispatch and faculty invigilation orders are delivered dynamically using <strong>Flask-Mail</strong>.</p>
       
-      <h4>📊 Key Features</h4>
+      <h4>🛡️ Multi-Tier Access & Auth</h4>
+      <p>Dedicated authentication portals for Institutional Administrators, Students, and Faculty with USN and institutional verification.</p>
+      
+      <h4>📊 Key Features & Access</h4>
       <ul>
-        <li>Teacher and student role separation with isolated administrative privileges.</li>
-        <li>Automated warning notifications when attendance falls below 75% criteria.</li>
-        <li>Instant Excel/CSV audit export for university semester filings.</li>
+        <li>Algorithmic seating allocation preventing multi-department subject clashes.</li>
+        <li>Multi-recipient asynchronous email dispatch for hall tickets and invigilation orders.</li>
+        <li>Live Vercel Production: Admin login via <code>admin</code> / <code>admin@1234</code>.</li>
       </ul>
     `
   },
