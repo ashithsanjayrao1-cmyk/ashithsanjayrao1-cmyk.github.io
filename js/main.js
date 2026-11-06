@@ -404,11 +404,12 @@ function initInteractiveTerminal() {
   if (!terminalInput || !terminalOutput) return;
 
   const COMMANDS = {
-    help: "Available Commands:\n  - about     : High-level engineer overview\n  - skills    : Technical stack & tools\n  - projects  : Featured production repositories\n  - contact   : Direct email & communication channels\n  - hire      : Recruiter snapshot summary\n  - clear     : Wipe terminal display",
+    help: "Available Commands:\n  - about     : High-level engineer overview\n  - skills    : Technical stack & tools\n  - projects  : Featured production repositories\n  - contact   : Direct email & communication channels\n  - linkedin  : View LinkedIn profile link\n  - hire      : Recruiter snapshot summary\n  - clear     : Wipe terminal display",
     about: "Ashith Sanjay Rao | Master of Computer Applications (MCA Graduate) | Bengaluru, India\nSpecializing in high-performance Python backends, FastAPI architectures, and algorithmic systems.",
     skills: "Languages  : Python, JavaScript (ES6+), SQL, HTML5, CSS3, C++\nFrameworks : FastAPI, Django, React.js, Tailwind CSS, SQLAlchemy, Pydantic\nDatabases  : MySQL, SQLite, PostgreSQL\nTools      : Git, GitHub, Vercel, Render, Postman, Linux",
     projects: "1. E-Waste Master ERP (FastAPI, SQLAlchemy, Tailwind, ReportLab, JWT)\n   - Live Demo : https://e-waste-erp-project.vercel.app/dashboard\n   - Demo Login: user=admin | pass=admin123\n2. Automated Examination Workflow (AEW) (Flask, Flask-SQLAlchemy, Flask-Mail)\n   - Live Demo : https://automated-exam-work-project-aew.vercel.app/\n   - Admin Auth: user=admin | pass=admin@1234\n3. Spottr Fitness Backend (FastAPI, RESTful Analytics API)\n   - Docs/Code : https://github.com/ashithsanjayrao1-cmyk/Spottr-Project\n4. DSA Interview Practice (Python 50+ Algorithmic Solutions)\n   - GitHub    : https://github.com/ashithsanjayrao1-cmyk/DSA_Interview_Practice",
     contact: "Email    : ashithsanjayrao1@gmail.com\nGitHub   : https://github.com/ashithsanjayrao1-cmyk\nLinkedIn : https://www.linkedin.com/in/ashith-sanjay-rao/",
+    linkedin: "Ashith Sanjay Rao on LinkedIn: https://www.linkedin.com/in/ashith-sanjay-rao/",
     hire: "⚡ RECRUITER FAST-TRACK:\nTarget Roles : Software Engineer (SDE), Backend Developer, Full-Stack Engineer\nNotice Period: 0 Days (Immediate Joiner)\nStatus       : MCA Graduate (Immediate Joiner)\nReady to interview immediately!"
   };
 
