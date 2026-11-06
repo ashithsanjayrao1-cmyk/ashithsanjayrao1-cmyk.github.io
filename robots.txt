@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://ashith-sanjay-rao.netlify.app/sitemap.xml
 Sitemap: https://ashithsanjayrao1-cmyk.github.io/sitemap.xml
