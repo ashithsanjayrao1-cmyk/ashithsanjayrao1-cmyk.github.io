@@ -30,3 +30,8 @@
   for = "/robots.txt"
   [headers.values]
     Content-Type = "text/plain; charset=UTF-8"
+
+[[headers]]
+  for = "/favicon*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
